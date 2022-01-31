@@ -8,7 +8,6 @@
 // but Intersection can't just use the one defined in Union,
 // because of differences in the trait implementations.
 
-
 // This implementation just uses the existing seL4_Error with minor modifications
 // where rust provides an alternate mechanism.
 pub mod union;

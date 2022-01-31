@@ -91,7 +91,6 @@ impl FromResidual<Result<Infallible, JustError>> for Error {
     }
 }
 
-
 #[derive(Copy, Clone, Debug, EnumCount, Eq, PartialEq)]
 #[repr(i32)]
 #[allow(clippy::enum_variant_names)]
@@ -111,7 +110,6 @@ enum Error {
     // if you add anything you'll need to replace the previous last error
     // with the newly added one in the test_count() test below.
 }
-
 
 // In theory I should just write a derive macro to derive this enum from
 // Error without any duplication.  This would not be hard to do, I just have not done it.
