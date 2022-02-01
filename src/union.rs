@@ -1,11 +1,8 @@
 use core::fmt::Debug;
 use core::num::NonZeroI32;
-use core::ops::ControlFlow;
-use core::ops::FromResidual;
-use core::ops::Try;
+use core::ops::{ControlFlow, FromResidual, Try};
 use core::result::Result as CoreResult;
 use strum::EnumCount;
-use strum_macros::EnumCount;
 
 /*
  * Not certain we would want this?

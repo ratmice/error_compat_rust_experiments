@@ -1,18 +1,10 @@
 use core::convert::Infallible;
 use core::fmt::Debug;
 use core::num::NonZeroI32;
-use core::ops::ControlFlow;
-use core::ops::FromResidual;
-use core::ops::Try;
+use core::ops::{ControlFlow, FromResidual, Try};
 use core::result::Result;
-use strum::EnumCount;
-use strum_macros::EnumCount;
-
-use strum::EnumMetadata;
-use strum_macros::EnumMetadata;
-
+use strum::{EnumCount, EnumMetadata};
 use enum_extra::NonZeroRepr;
-use enum_extra_derive::NonZeroRepr;
 
 // Not sure if we actually want this one.
 impl From<Result<(), Error>> for Error {
